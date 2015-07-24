@@ -11,7 +11,11 @@ func TestCalculator(t *testing.T) {
 	}
 
 	if c.Multiply() != 200 {
-		t.Error("OOPS, Addition failed")
+		t.Error("OOPS, Multiply failed")
+	}
+
+	if c.Subtract() != -10 {
+		t.Error("OOPS, Subtract failed")
 	}
 
 }
