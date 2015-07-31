@@ -23,6 +23,13 @@ func (c *Calculator) Add() int {
 func (c *Calculator) Subtract() int {
 	return c.x - c.y
 }
+func (values ...int) adds int {
+	total := 0
+	_,value  := range values {
+		total += value
+	}
+	return total
+}
 
 func main() {
 	c := &Calculator{10, 80}
